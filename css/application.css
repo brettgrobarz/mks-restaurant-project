@@ -90,6 +90,9 @@ section {
 
 
 /* TODO center the text of the h2 and menu-section */
+.menu-section.is-active {
+    color: red;
+}
 
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
