@@ -53,29 +53,37 @@
 
         <!-- Address, map, hours -->
         <section class="address">
-            <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
+            <div class="row">
+            <!-- todo add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
 
-                <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
+                <!-- todo for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location">
-                    <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
+                    <div class="column large-4">
+                    <!-- todo link to the hotel website and make the telephone a tel: link, and style this content -->
                     at the Radisson Hotel
                     111 east cesar chavez
                     austin, texas 78701
                     512.478.2291
+                    </div>
                 </div>
 
                 <div class="map">
-                    <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    <div class="column large-4">
+                    <a href="http://goo.gl/maps/qgnVW"><img src="images/map.png"></a>
+                    <!-- todo there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    </div>
                 </div>
 
                 <div class="hours">
+                    <div class="column large-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
                     breakfast: 6:30–11am
                     lunch: 11am–3pm
                     limited menu: 3–5pm
                     dinner: 5–10pm
+                    </div>
                 </div>
-
+            </div>        
         </section>
 
         <!-- Menu -->
