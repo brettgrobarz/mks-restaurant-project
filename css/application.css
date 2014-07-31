@@ -193,7 +193,8 @@ section {
     /* TODO add some top and bottom padding so that the content doesn't overlap the background image. Note how the padding changes the location of the background image. */
 }
 
-.social-links img {
+.social-links a {
+    padding-right: .5em;
     opacity: 0.5;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -203,7 +204,7 @@ section {
 
 }
 
-.social-links img:hover {
+.social-links a:hover {
       opacity: 1;
 
 }
