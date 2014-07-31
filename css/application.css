@@ -102,6 +102,9 @@ section {
 }
 
 .menu h2 {
+    text-align: center;
+    /* TODO center the text of the h2 and menu-section */
+    font-size: 4em;
     /* TODO make this font size larger than the Foundation default */
 }
 
@@ -110,11 +113,26 @@ section {
     /* TODO give these headers a color of #221c12 */
 }
 
+.menu h3 {
+    text-align: center;
+}
 
-/* TODO center the text of the h2 and menu-section */
+
 
 
 .menu-section h3 a {
+    text-align: center;
+    color: rgba(34, 28, 18, .75);
+    border-bottom: solid black 3px;
+}
+
+.menu-section h3 a:hover {
+    color: black;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
     /* TODO give the menu section links a CSS transition so that when you hover them, the color fades in slowly */
 }
@@ -133,6 +151,7 @@ section {
 }
 
 .menu-item {
+
     /* TODO give each menu item some bottom margin */
 }
 
