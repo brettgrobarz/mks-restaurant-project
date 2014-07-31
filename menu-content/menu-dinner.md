@@ -59,16 +59,17 @@ malpeque oyster
 bluepoint oyster
     long island sound 3
 seafood coctel
-    shrimp, avocado, tomato, cucumber, onion 11
-raw bass
-    avocado, lime, guajillo 11
+    shrimp, avocado, tomato, cucumber, onions 11
+        raw bass
+            avocado, lime, guajillo 11
 vuelve a la vida
     squid, shrimp, salmon, spicy tomato, celery 9
 ceviche traditional
     avocado, tomato, jalapeño 9
 hamachi
     “horchata”, orange 11
-vegan ceviche chayote, cauliflower, beet, orange 8 
+vegan ceviche 
+chayote, cauliflower, beet, orange 8 
 
 ## Entrées
 

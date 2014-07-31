@@ -90,9 +90,7 @@ section {
 
 
 /* TODO center the text of the h2 and menu-section */
-.menu-section.is-active {
-    color: red;
-}
+
 
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
@@ -108,6 +106,9 @@ section {
     /* TODO give this some space below the menu links */
 }
 
+.menu-item-description, .menu-item-price {
+    display: inline;
+}
 
 .menu-item {
     /* TODO give each menu item some bottom margin */
