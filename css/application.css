@@ -123,11 +123,16 @@ section {
 .menu-section h3 a {
     text-align: center;
     color: rgba(34, 28, 18, .75);
-    border-bottom: solid black 3px;
+    
+}
+
+.menu-section.is-active h3 a {
+     border-bottom: solid black 3px;
 }
 
 .menu-section h3 a:hover {
-    color: black;
+    color: rgba(34, 28, 18, 1.0);
+   /* border-bottom: solid black 3px;*/
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
