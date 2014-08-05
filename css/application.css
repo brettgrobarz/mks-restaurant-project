@@ -126,9 +126,14 @@ section {
     
 }
 
-.menu-section.is-active h3 a {
+/*.menu-section.is-active h3 a {
      border-bottom: solid black 2px;
+    
+}*/
+a.is-active {
+    border-bottom: solid black 2px;
 }
+
 
 .menu-section h3 a:hover {
     color: rgba(34, 28, 18, 1.0);

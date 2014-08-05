@@ -22,18 +22,20 @@ $(function() {
     $( document ).on( 'click', '.menu-section a', function( event ) {
       // Prevent the default action of the event
       event.preventDefault();
-        console.log(this);
+        // console.log(this);
 
       // Assign the id of the clicked element to a variable named id
       var id = $( this ).attr( 'id' );
-        console.log(id);
+        // console.log(id);
 
       // Remove the class 'is-active' from all menu item headings
-      $( '.menu-section-item' ).removeClass( 'is-active' );
+      $( '.menu-section a' ).removeClass( 'is-active' );
         // console.log( $('.menu-section-item').hasClass( 'is-active'));
 
       // Add 'is-active' to this specific action that was clicked. is-active
       // provides the visual cue for what's active via CSS
+      // console.log(this);
+      // this.find the parent of this with the class .menu-section.addClass
       $( this ).addClass( 'is-active' );
 
       // Once you're started with TODO #2, call the getMenu function here,
@@ -59,7 +61,7 @@ $(function() {
     function getMenu( course ) {
       // Use `$.getJSON` to get the menu for whatever menu heading was clicked
       $.getJSON( 'http://mksrestaurantapi.herokuapp.com/menu-' + course + '.json', function( json ) {
-        console.log("what menu should I be seeing", course);
+        // console.log("what menu should I be seeing", course);
         populateMenu( json );
         // Once you're started with TODO #3, call the populateMenu function here
         // and pass json as the argument
