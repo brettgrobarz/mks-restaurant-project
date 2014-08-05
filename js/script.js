@@ -80,12 +80,14 @@ $(function() {
         for( var j = 0; j < json[i].content.length; j++ ) {
           html += '<div class="menu-item">';
           html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
+              if (json[i].content[j].ingredients != undefined) html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
           html += '<div class="menu-item-price">' + json[i].content[j].price + '</div>';
           html += '</div>';
         }
 
         html += '</div>';
+
+
       }
 
       // Use `.html` to replace the contents of `.menu-section-content`
@@ -97,5 +99,7 @@ $(function() {
 
     // TODO #4 Call getMenu with a menu of your choice and set that menu's
     // header to active so that a menu is loaded with the page by default
+
+    getMenu('dinner');
 
 });
