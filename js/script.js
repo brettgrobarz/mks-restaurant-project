@@ -5,6 +5,7 @@ $(function() {
     // TODO #1 Set an event listener to listen for clicks on each menu section
     // heading anchor
 
+
     // Note: my menu section headings look like this:
     //
     // <div class="menu-section">
@@ -18,15 +19,18 @@ $(function() {
     // I've given all of the anchors the same class so that I can easily target
     // all of them with jQuery
 
-    $( document ).on( 'click', '.menu-section-item', function( event ) {
+    $( document ).on( 'click', '.menu-section', function( event ) {
       // Prevent the default action of the event
       event.preventDefault();
+        console.log(this);
 
       // Assign the id of the clicked element to a variable named id
       var id = $( this ).attr( 'id' );
+        console.log(id);
 
       // Remove the class 'is-active' from all menu item headings
       $( '.menu-section-item' ).removeClass( 'is-active' );
+        // console.log( $('.menu-section-item').hasClass( 'is-active'));
 
       // Add 'is-active' to this specific action that was clicked. is-active
       // provides the visual cue for what's active via CSS
