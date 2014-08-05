@@ -19,7 +19,7 @@ $(function() {
     // I've given all of the anchors the same class so that I can easily target
     // all of them with jQuery
 
-    $( document ).on( 'click', '.menu-section', function( event ) {
+    $( document ).on( 'click', '.menu-section a', function( event ) {
       // Prevent the default action of the event
       event.preventDefault();
         console.log(this);
@@ -59,6 +59,7 @@ $(function() {
     function getMenu( course ) {
       // Use `$.getJSON` to get the menu for whatever menu heading was clicked
       $.getJSON( 'http://mksrestaurantapi.herokuapp.com/menu-' + course + '.json', function( json ) {
+        console.log("what menu should I be seeing", course);
         populateMenu( json );
         // Once you're started with TODO #3, call the populateMenu function here
         // and pass json as the argument
@@ -89,6 +90,7 @@ $(function() {
 
       // Use `.html` to replace the contents of `.menu-section-content`
       $( '.menu-section-content' ).html( html );
+
     }
 
 
